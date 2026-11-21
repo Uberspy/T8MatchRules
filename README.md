@@ -2,7 +2,7 @@
 
 [Download 0.1.0 beta 1](https://github.com/Uberspy/T8MatchRules/releases/download/v0.1.0-beta.1/T8MatchRules-0.1.0-beta.1.zip)
 
-Configure matchmaking filters from an F11 menu: region, language, wired/Wi-Fi and connection strength. RTT filtering is not included.
+Configure matchmaking filters to choose specific region, language, wired/Wi-Fi and connection strength to match with, and auto-accept/decline opponents.
 
 ## Install UE4SS (skip if already installed)
 
@@ -14,10 +14,9 @@ Configure matchmaking filters from an F11 menu: region, language, wired/Wi-Fi an
 
 1. Close the game and extract the mod ZIP.
 2. Copy the included `Polaris` folder into your TEKKEN 8 game folder, merging folders.
-3. Check that `Polaris/Binaries/Win64/Mods/T8MatchRules` contains `enabled.txt`, `Scripts/main.lua` and `dlls/main.dll`.
-4. Launch the game and press **F11**.
+3. Launch the game and press **F11**.
 
-If updating, back up the old T8MatchRules folder outside Mods, install the new copy, then restore only `profile.ini` to keep your settings. Disable other matchmaking automation mods to avoid conflicting inputs.
+If updating, back up the old T8MatchRules folder outside Mods, install the new copy, then restore only `profile.ini` to keep your settings.
 
 ## Using the menu
 
