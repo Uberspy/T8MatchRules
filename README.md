@@ -1,6 +1,6 @@
 # T8MatchRules
 
-[Download 0.1.0 beta 1](https://github.com/Uberspy/T8MatchRules/releases/download/v0.1.0-beta.1/T8MatchRules-0.1.0-beta.1.zip)
+[Download 0.1.1 beta 1](https://github.com/Uberspy/T8MatchRules/releases/download/v0.1.1-beta.1/T8MatchRules-0.1.1-beta.1.zip)
 
 Configure matchmaking filters to choose specific region, language, wired/Wi-Fi and connection strength to match with, and auto-accept/decline opponents.
 
@@ -23,6 +23,7 @@ If updating, back up the old T8MatchRules folder outside Mods, install the new c
 - Enable any of the four filters and select the values you allow. **Ctrl+click** selects multiple values; **Select all** and **Clear** change the selection.
 - All enabled filters must pass. Any selected value within a filter is allowed. Unchecked filters allow anything; an enabled empty filter allows nobody.
 - **Observe** previews decisions without acting. **Automatic** accepts allowed opponents and declines others. **Off** stops automatic input.
+- Automation pauses once a match starts and resumes on the next search. An opponent declining does not switch it off. Your saved mode is preserved.
 - **Autofocus** brings Tekken forward for decisions. The menu shortcut can also be changed.
 - Click **Save and close** to apply changes to the next opponent prompt. **Cancel** discards changes.
 - **F12** turns automation Off while Tekken or its settings window has focus.
