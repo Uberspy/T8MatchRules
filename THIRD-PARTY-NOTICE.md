@@ -36,3 +36,25 @@ SOFTWARE.
 `UE4SS.def` is a locally generated symbol list (not copied from UE4SS) used
 to build an import library against your own installed `UE4SS.dll` -- see
 `BUILD.md`.
+
+
+# RTT method attribution
+
+The connection card's native manager/list sampling approach was informed by
+**TekkenRTTDisplay**, by mulkmulkmulk:
+<https://tekkenmods.com/mod/7344/> (version 1.1.5, November 2026).
+
+The locally preserved author source (`research/TekkenRTTDisplay-source/main.cpp`)
+was read together with the November Lua script and previously inspected 1.1.5
+binary. No third-party mod DLL is bundled or loaded. This implementation uses
+the independently traced current-build sentinel layout and fresh bounded reads,
+rather than copying the reference's old RVA or its detached polling thread.
+Its native average is calculated from the game's manager samples. Sample range
+is not packet loss or statistical jitter, and the manager's opponent binding and
+measurement age are not verified. Version 0.2.1 adds an explicitly optional
+rolling-mean filter after an observed sample reset/refresh in the current
+candidate/manager/list epoch, with conservative capture/change age limits.
+This temporal relationship does not establish account-level source identity.
+
+The source page lists permission to modify and use the mod's assets. This note
+credits the method; existing UE4SS license notices remain included above.
